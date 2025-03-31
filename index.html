@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Julia Nails</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./img/favicon-nail.png">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+    <!-- Estilos importados-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Fontes personalizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Meta tag para descrição do site -->
+  <meta name="description" content="Ana Julia Nails - Design de Unhas Profissional">
+</head>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <ul class="navlist">
+      <li class="active"><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Ferramentas</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  
+    <div>
+      <ul class="social-network">
+        <li>
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <figure id="fig1"></figure>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com" target="_blank">
+            <figure id="fig2"></figure>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Ícone do menu mobile -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção Home -->
+    <section id="home" class="home">
+      <div class="home-presentation">
+        <p class="my-name">meu nome é</p>
+        <h1 id="name">Ana Julia</h1>
+        <h1 id="last-name">Nails</h1>
+        <h3><p>sou</p> Nail Designer <span><strong>|</strong> Designer de Unhas</span></h3>
+        <div class="button">
+          <a href="#projects" class="project-button">Projetos</a>
+          <a href="#contact" class="contact-button">Contato</a>
+        </div>
+      </div>
+      <img class="home-mac" id="profile-pic" src="./img/WhatsApp Image 2025-03-25 at 11.55.41.jpeg" alt="Foto de perfil">
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/eu.jpg" alt="Minha foto">
+      </div>
+      <div class="about-text">
+        <h2><span>SOBRE</span> MIM</h2>
+        <p>
+          Tenho 17 anos e atualmente trabalho como atendente no shopping, mas o meu desejo é trabalhar na área da beleza como nail designer no meu próprio espaço.
+        </p>
+        <p>
+          Como nail designer, minha missão é criar unhas que não apenas fiquem lindas, mas também entreguem experiências incríveis às minhas clientes, fazendo com que elas se sintam bem e confiantes. Trabalho com técnicas modernas e materiais de qualidade para garantir resultados duradouros e estilosos.
+        </p>
+        <button class="button-cv">
+          <a href="assets/Preto e Branco Currículo Simples da Área de Logística (1).pdf" download="CV - Ana Julia Nails" class="btn-cv"> Download CV</a>
+        </button>
+      </div>
+      <img src="./img/balls.svg" alt="balls" class="balls">
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="skills" id="skills">
+      <div class="line"></div>
+      <div class="tool">
+        <h2>FERRAMENTAS</h2>
+        <div class="tools">
+          <div class="card">
+            <img src="./img/po.png" alt="icone pó acrilico">
+            <p>Pó Acrílico</p>
+          </div>
+          <div class="card">
+            <img src="./img/monomer.png" alt="icone monomer">
+            <p>Monomer</p>
+          </div>
+          <div class="card">
+            <img src="./img/luva.png" alt="icone luvas">
+            <p>Luvas</p>
+          </div>
+          <div class="card">
+            <img src="./img/motor.png" alt="icone motor">
+            <p>Motor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projects" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meus <span>Projetos</span></h2>
+      </div>
+      <!-- Container do carrossel -->
+      <div class="carousel-container">
+        <!-- Botões de navegação -->
+        <button class="carousel-button prev" aria-label="Projeto anterior">&#10094;</button>
+        <button class="carousel-button next" aria-label="Próximo projeto">&#10095;</button>
+        <!-- Slides do carrossel -->
+        <div class="carousel-slides">
+          <!-- Slide 1 - Login -->
+          <div class="carousel-slide active">
+            <div class="row">
+              <img src="./img/unha1.jpeg" alt="Modelo de unha 1">
+              <div class="layer">
+                <h5>Modelo de unha 1</h5>
+                <p>Unha almond francesa reversa com brilho.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 - Cronômetro -->
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="./img/unha2.jpeg" alt="Para todos os gostos">
+              <div class="layer">
+                <h5>Para todos os gostos</h5>
+                <p>Pretinho básico com francesa reversa.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 - Formulário -->
+          <div class="carousel-slide">
+            <div class="row">
+              <img src="./img/unha3.jpeg" alt="Stileto">
+              <div class="layer">
+                <h5>Stileto</h5>
+                <p>Stileto com muitos brilhos reflexivos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>Entre em <span>contato</span></h2>
+        </div>
+      </div>
+      <div class="contact-form">
+        <!-- Serviço gratuito (formsubmit) que envia os dados para o e-mail descrito abaixo -->
+        <form id="contactForm" action="https://formsubmit.co/prof.ap5976537@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Digite seu nome" required>
+          <input type="email" name="email" placeholder="Digite seu melhor e-mail" required>
+          <input type="hidden" name="_captcha" value="false">
+          <textarea type="text" name="text" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
+          <br>
+          <input type="submit" value="Enviar" class="submit" required>
+        </form>
+        <!-- Mensagem de agradecimento (Após enviar formulário)-->
+        <div id="thankYouMessage" class="thank-you-message">
+          Obrigado! Aguarde nosso retorno!
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <section class="end">
+    <div class="last-text">
+      <p>by Ana Julia Nails <img src="./img/bussola.svg" alt=""> Alguns direitos reservados.</p>
+    </div>
+
+    <div class="top">
+      <!-- Seta adicionada do serviço: boxicons -->
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
